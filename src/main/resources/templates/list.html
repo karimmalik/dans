@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>list job</title>	
+	</head>
+
+	<body>
+	
+		<table>
+			<thead>
+				<tr>
+					<th>id </th>
+					<th>type </th>
+					<th>url </th>
+					<th>created_at </th>
+					<th>company </th>
+					<th>company_url </th>
+					<th>location </th>
+					<th>title </th>
+					<th>description </th>
+				</tr>
+			</thead>
+			
+		 	<tr th:each="job: ${jobs}">
+				<td th:text="${job.id}">
+				<td th:text="${job.type}">
+				<td th:text="${job.created_at}">
+				<td th:text="${job.company}">
+				<td th:text="${job.company_url}">
+				<td th:text="${job.location}">
+				<td th:text="${job.title}">
+				<td th:text="${job.description}">
+			</tr> 
+			
+		</table>
+	
+	</body>
+</html>
